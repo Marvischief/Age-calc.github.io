@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="result head">Enter your age</h1>
+        <br>
+      <div class="c1">
+        <div>
+          <label for="quantity"> <em> DAY </em></label><br />
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="31"
+            required
+            placeholder="DD"
+          />
+        </div>
+
+        <div>
+          <label for="month"> <em> MONTH </em></label><br />
+          <input
+            type="number"
+            id="month"
+            name="year"
+            min="01"
+            max="12"
+            required
+            placeholder="MM"
+          />
+        </div>
+
+        <div>
+          <label for="year"> <em> YEAR </em></label><br />
+          <input
+            type="number"
+            id="year"
+            name="year"
+            min="1873"
+            max="2023"
+            required 
+            placeholder="YYYY"
+          />
+        </div>
+      </div>
+      <br><br>
+      <div class="c2">
+        <hr />
+        <svg
+        class="arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 46 44"
+        >
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path
+              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+            />
+          </g>
+        </svg>
+      </div>
+      <h1 id="printYear" class="result"><i>- - <a href="#" class="last">years</a></i></h1>
+      <h1 id="printMonth" class="result"><i>- - <a href="#" class="last">months</a></i></h1>
+      <h1 id="printDay" class="result"><i></i>- - <a href="#" class="last">days</a></h1>
+      
+      
+     
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
